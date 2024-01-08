@@ -23,7 +23,7 @@ Om de robot arm op de AMR te plaatsen is een tussen frame nodig. Hier zal ook me
 ## 2. SolidWorks
 Alle onderdelen zijn gemaakt in SolidWorks. Hierin is ook een totaal assembly gemaakt van de MoMa. Hieronder is een renders daarvan te zien.
 
-![moma](../images/moma-koffiemachine.jpg)
+![moma](images/moma-koffiemachine.jpg)
 
 ## 3. 3D prints
 De 3D prints zijn gemaakt door een bambu lab en anycubic printer maar een andere 3D printer zou ook moeten werken. De trap sensoren zijn gemaakt door de anycubic 3D printer. Dit is een resin printer, hier is voor gekozen omdat het een best complex onderdeel is met een clip systeem en overhangs. Een resin printer kan dit beter printen dan een FDM printer. De rest van de onderdelen zijn wel geprint door een FDM printer. Dit omdat dit sneller is en minder moeite kost met schoonmaken.
@@ -64,13 +64,13 @@ De volgende onderdelen zijn water gesneden: ( als er 2X in staat moet deze 2 kee
 
 
 Dit is gedaan met de OMAX 2652 watersnijder:
-![1](../images/watersnijder.jpg)
+![1](images/watersnijder.jpg)
 
 ### 4.1 Buigen
 De voor en achter plaat van het frame moeten worden gebogen. Het is handig om eerst een test strip te maken en die te buigen. De voorplaat heeft een lengte nodig van 655,59mm voor de test strip is het handig om deze te af te sniden op een hoogte van 100mm. De achter plaat heeft een lengte van 633,82 en ook hiet is het handig om de test strip een hoogte van 100mm te doen. De volgorde van het buigen is eerst de ronding doen en daarna met de kantbank vanaf de buiging naar het einde te werken. De afmetingen en rondingen van de buigen zijn te vinden in de SolidWorks tekening van de betrevende onderdelen. De watergesneden top plate voor de LD-90 is ook goed te gebruiken als referentie bij het buigen. Een voorbeeld van de gebogen test strips is hieronder te zien:
 
 
-![2](../images/test-buigen.jpg)
+![2](images/test-buigen.jpg)
 
 
 De uiteindelijke platen moeten worden gesneden op een hoogte van 450mm in plaats van de 100mm van de test strips. Ook is het belangrijk om voor het buigen eerst de bramen op de randen weg te halen met vijl en de gaten te verzinken voor een M4 verzonken inbus bout. De test platen kunnen tijdens het buigen ook handig als referentie worden gebruikt.
@@ -95,8 +95,8 @@ In de SoldWorks assembly is alles te zien zoals de bouten en moeren dus dit kan 
 ## 6. Trap sensor
 Omdat het helaas een keer is gebeurd dat een geleende LD-60 van de trap is gevallen bij NHL-Stenden door de afwezigheid van een trap sensor, hebben we er voor gekozen om een zelfgemaakte trap sensor toe te voegen. Deze zal worden aangesloten op de UserBumper_1-3. Dit werk door een ToF sensor die schuin naar voren kijkt en de data naar een esp32 stuurt. zodra deze een verhoging of verlaging van 30 mm tegen komt zal deze een relais triggeren welke is aangesloten op de UserBumper_1-3 van de LD-90. Hieronder is een prgramma geschreven in arduino IDE welke te vinden is onder de map trap beveiliging. Hier moet nog een stuk worden toegevoegd voor de WS2812 leds welke in de behuizingen worden geplaatst van de sensoren om de status weer te geven. Hieronder zijn wat renders te zien over hoe het er uit zou moeten zien:
 
-![3](../images/trap-sensor-voorkant.jpg)
+![3](images/trap-sensor-voorkant.jpg)
 Vooraanzicht 3 trap sensoren.
 
-![4](../images/trap-sensor.jpg)
+![4](images/trap-sensor.jpg)
 Ingezoomd op 1 trap sensor
