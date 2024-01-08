@@ -78,21 +78,7 @@ De uiteindelijke platen moeten worden gesneden op een hoogte van 450mm in plaats
 ### 4.2 Verzinken en tappen
 De 4 tussenplaten moeten worden getapped met een M4 tap. Verder moeten de voor, achter en zei platen worden verzonken voor een M4 verzonken inbus bout. Let op bij het verzinken dat dit aan de juiste kant wordt gedaan. De voor en achter plaat maakt niet uit maar moet je er vervolgens wel rekening mee houden bij het buigen. Voor de 2 zei platen is het belangrijk dat ze beide aan een andere kant zijn verzonken want deze zijn op die manier gespiegeld. Verder moet er voor de top plate en top top plate verzonken worden voor M6 en M5 verzonken inbus bouten volgens de SolidWorks tekening.
 
-## 5. Montage 
-De montage van het frame moet met minimaal 2 personen worden gedaan. Dit wegens het gewicht, grote en kostbaarheid.
-
-1. Het handigst is om eerst de robot arm op de top top plate te bevestigen met M10 bouten en moeren (met ring en veer ring). 
-2. Vervolgens kan de robot arm besturingskast, 2020 aluminium frames en een M6 staaf met moet en ring midden voor op de top plate worden bevestigd. 
-3. Monteer de top plate met de robot arm besturingskast, 2020 aluminium profielen en 500mm M6 staaf op de LD-90 en zet deze vast met M6 verzonken inbus bouten. Let op dat alle benodigde kabels door het vierkante gat van de top plate mee gaat bij het plaatsen van de top plate. 
-4. Nu kunnen de andere 4 M6 stafen worden bevestigd op de top plate. 
-5. Vervolgens kunnen de 5 4040 aluminium profielen worden geschoven over de M6 stafen. 
-6. Nu kan de top top plate met de robotarm bovenop worden geplaatst. Zorg er wel voor dat eerst de handvaten van de robot besturingskast er af zijn gehaald en dat de kabel van de robot arm door het gat van de top top plate is gedaan. 
-7. Nu kan de top top plate wast worden gezet met de dop moeren, ringen en veer ringen. 
-8. Hierna kunen de kabels worden aangesloten en de beplating op de alluminium profielen worden geschroeft met de t-sleuf moeren.
-
-In de SoldWorks assembly is alles te zien zoals de bouten en moeren dus dit kan ook als reverentie worden gebruikt.
-
-## 6. Trap sensor
+## 5. Trap sensor
 Omdat het helaas een keer is gebeurd dat een geleende LD-60 van de trap is gevallen bij NHL-Stenden door de afwezigheid van een trap sensor, hebben we er voor gekozen om een zelfgemaakte trap sensor toe te voegen. Deze zal worden aangesloten op de UserBumper_1-3. Dit werk door een ToF sensor die schuin naar voren kijkt en de data naar een esp32 stuurt. zodra deze een verhoging of verlaging van 30 mm tegen komt zal deze een relais triggeren welke is aangesloten op de UserBumper_1-3 van de LD-90. Hieronder is een prgramma geschreven in arduino IDE welke te vinden is onder de map trap beveiliging. Hier moet nog een stuk worden toegevoegd voor de WS2812 leds welke in de behuizingen worden geplaatst van de sensoren om de status weer te geven. Hieronder zijn wat renders te zien over hoe het er uit zou moeten zien:
 
 ![3](images/trap-sensor-voorkant.jpg)
@@ -100,3 +86,44 @@ Vooraanzicht 3 trap sensoren.
 
 ![4](images/trap-sensor.jpg)
 Ingezoomd op 1 trap sensor
+
+## 6. Monteren en demonteren
+
+### 6.1 Monteren
+De montage/demontage van het frame moet met minimaal 2 personen worden gedaan. Dit wegens het gewicht, grote en kostbaarheid.
+
+Bij onduidelijkheden kan je ook kijken naar de SoldWorks assembly, daar is alles te zien zoals de bouten en moeren.
+
+1. Haal de bovenplaat van de LD90 eraf (let op dat er kabels voor de antenne's en HMI aan de LD90 zitten en dat deze niet heel lang zijn).
+2. Demonteer de antenne's en de HMI van de bovenplaat. De antenne kabels en de HMI kabel mag bevestigd blijven aan de LD90. De HMI en antenne's moeten wel los worden gehaald van de kabels, deze worden er later weer opgezet.
+3. Bevestig de molex connectoren met kabels aan de LD90 IO zoals op onderstaande afbeelding.
+![kabels](images/kabels_LD.jpg)
+
+4. Maak de kabels netjes bij elkaar met tie wraps en een spiraalband. Leg alle benodigde kabels bij elkaar aan de voorkant van de LD90, hier zit het gat in de bovenplaat waar de kabels doorheen moeten. Zie onderstaande foto als voorbeeld.
+![montage_1](images/montage_1.jpg)
+
+5. Vervolgens kan de bovenplaat worden voorbereid voor de montage. Bevestig de robotarm besturingskast en 2020 aluminium frames aan de bovenplaat met M6 verzonken inbus bouten en bevestig 1 van de M6 stafen aan de bovenplaat. De M6 staaf moet wel met een moer en ring aan de onderkant worden bevestigd. Zie onderstaande foto's voor verduidelijking.
+![montage_2](images/montage_2.jpg)
+![montage_3](images/montage_3.jpg)
+
+6. Plaats nu de bovenplaat op de LD90. Doe dit met minimaal 2 mensen, 1 iemand die de bovenplaat met besturingskast op de LD90 plaatst en 1 iemand die de kabels door het vierkante gat begeleidt. Dit ziet er dan als volgt uit:
+![montage_4](images/montage_4.jpg)
+
+7. Bevestig nu een internet kabel aan de user LAN van de LD90. Zie onderstaande foto van de user LAN.
+![montage_5](images/montage_5.jpg)
+
+8. Plaats de besturingskast op de 2 2020 aluminium profielen en sluit alle kabels aan.
+
+9. Schroef nu de 4 overige M6 stafen aan de bovenplaat. Zie onderstaande foto's voor verduidelijking.
+![montage_6](images/montage_6.jpg)
+
+10. Bereid de 2 zei platen voor. Hiervoor zijn de volgende onderdelen voor nodig: 4 4040 profielen, 2 zei platen, 2 tussen platen, 2 tussen platen met ronding, 2 side lasers, 2 side laser bevestigingsplaten, 8 M4 verzonken inbus bouten, 6 M6 verzonken inbus bouten en 16 M6 T-sleuf moeren. Zie onderstaande foto van hoe het er uiteindelijk moet uitzien.
+![montage_7](images/montage_7.jpg)
+
+11. Plaats de 2 zei platen op de 4 M6 stafen, en plaats de laatste 4040 profiel op de M6 staaf midden voor.
+
+12. Bevestig de HMI en entenne extender kabels op de achterplaat van de LD90. Zie onderstaande foto van de bevestiging van de HMI met de 3D print.
+![HMI_1](images/HMI_1.jpg)
+![HMI_2](images/HMI_2.jpg)
+
+## 6.2 Demonteren
