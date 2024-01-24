@@ -81,11 +81,10 @@ De 4 tussenplaten moeten worden getapped met een M4 tap. Verder moeten de voor, 
 ## 5. Trap sensor
 Omdat het helaas een keer is gebeurd dat een geleende LD-60 van de trap is gevallen bij NHL-Stenden door de afwezigheid van een trap sensor, hebben we er voor gekozen om een zelfgemaakte trap sensor toe te voegen. Deze zal worden aangesloten op de UserBumper_1-3. Dit werk door een ToF sensor die schuin naar voren kijkt en de data naar een esp32 stuurt. zodra deze een verhoging of verlaging van 30 mm tegen komt zal deze een relais triggeren welke is aangesloten op de UserBumper_1-3 van de LD-90. Hieronder is een prgramma geschreven in arduino IDE welke te vinden is onder de map trap beveiliging. Hier moet nog een stuk worden toegevoegd voor de WS2812 leds welke in de behuizingen worden geplaatst van de sensoren om de status weer te geven. Hieronder zijn wat renders te zien over hoe het er uit zou moeten zien:
 
-![3](images/trap-sensor-voorkant.jpg)
-Vooraanzicht 3 trap sensoren.
+Vooraanzicht 3 trap sensoren             |  Ingezoomd op 1 trap sensor
+:-------------------------:|:-------------------------:
+![3](images/trap-sensor-voorkant.jpg)  |  ![4](images/trap-sensor.jpg)
 
-![4](images/trap-sensor.jpg)
-Ingezoomd op 1 trap sensor
 
 ## 6. Monteren en demonteren
 
@@ -103,8 +102,10 @@ Bij onduidelijkheden kan je ook kijken naar de SoldWorks assembly, daar is alles
 ![montage_1](images/montage_1.jpg)
 
 5. Vervolgens kan de bovenplaat worden voorbereid voor de montage. Bevestig de robotarm besturingskast en 2020 aluminium frames aan de bovenplaat met M6 verzonken inbus bouten en bevestig 1 van de M6 stafen aan de bovenplaat. De M6 staaf moet wel met een moer en ring aan de onderkant worden bevestigd. Zie onderstaande foto's voor verduidelijking.
-![montage_2](images/montage_2.jpg)
-![montage_3](images/montage_3.jpg)
+
+Overzicht             |  Moer onder bovenplaat
+:-------------------------:|:-------------------------:
+![montage_2](images/montage_2.jpg)  |  ![montage_3](images/montage_3.jpg)
 
 6. Plaats nu de bovenplaat op de LD90. Doe dit met minimaal 2 mensen, 1 iemand die de bovenplaat met besturingskast op de LD90 plaatst en 1 iemand die de kabels door het vierkante gat begeleidt. Dit ziet er dan als volgt uit:
 ![montage_4](images/montage_4.jpg)
@@ -123,7 +124,9 @@ Bij onduidelijkheden kan je ook kijken naar de SoldWorks assembly, daar is alles
 11. Plaats de 2 zei platen op de 4 M6 stafen, en plaats de laatste 4040 profiel op de M6 staaf midden voor.
 
 12. Bevestig de HMI en entenne extender kabels op de achterplaat van de LD90. Zie onderstaande foto van de bevestiging van de HMI met de 3D print.
-![HMI_1](images/HMI_1.jpg)
-![HMI_2](images/HMI_2.jpg)
+
+Vooraanzicht             |  Achteraanzicht
+:-------------------------:|:-------------------------:
+![HMI_1](images/HMI_1.jpg)  |  ![HMI_2](images/HMI_2.jpg)
 
 ## 6.2 Demonteren
