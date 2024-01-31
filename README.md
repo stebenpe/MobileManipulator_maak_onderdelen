@@ -1,5 +1,5 @@
 # Maak onderdelen
-Om de robot arm op de AMR te plaatsen is een tussen frame nodig. Hier zal ook meteen alle besturingsonderdelen van de MoMa in worden geplaatst. Het frame bestaat uit 4040 en 2020 aluminium frames met beplating er omheen voor stevigheid en afscherming. In het frame zit de besturingskast van de robot arm, safety PLC, embedded AI computer, router en bedingingspanneel met noodstop. De beplating is watergesneden, gebogen, getapped en verzonken. verder zijn er een aantal onderdelen 3D geprint, dit zijn: trap sensoren, houder embedded AI computer, besturingspaneel houder en de kabel buis houders. Dit is geprint met een FDM printer op de trap sensoren na. Deze zijn met een resin printer gemaakt.
+Om de robot arm op de AMR te plaatsen is een tussen frame nodig. Hier zal ook meteen alle besturingsonderdelen van de MoMa in worden geplaatst. Het frame bestaat uit 4040 en 2020 aluminium frames met beplating er omheen voor stevigheid en afscherming. In het frame zit de besturingskast van de robot arm, safety PLC, embedded AI computer, router en bedingingspaneel met noodstop. De beplating is watergesneden, gebogen, getapped en verzonken. verder zijn er een aantal onderdelen 3D geprint, dit zijn: trap sensoren, houder embedded AI computer, besturingspaneel houder en de kabel buis houders. Dit is geprint met een FDM printer op de trap sensoren na. Deze zijn met een resin printer gemaakt.
 
 ## 1. Benodigde onderdelen
 1. 2020 ISB aluminium profiel 450mm lang 2X (met M6 getapped gat aan beide kanten)
@@ -50,7 +50,7 @@ Op de resin printer zijn de volgende 3D prints genaakt:
 
 
 ## 4. Watersnijden
-De volgende onderdelen zijn water gesneden: ( als er 2X in staat moet deze 2 keer worden watergesneden. het aan mm van het matriaal zit ook in de naam)
+De volgende onderdelen zijn water gesneden: ( als er 2X in staat moet deze 2 keer worden watergesneden. het aan mm van het materiaal zit ook in de naam)
 1. 2X side laser holder 2mm.DXF
 2. 2X zei plaat 2mm.DXF
 3. 3d camera holder 2mm.DXF
@@ -67,7 +67,7 @@ Dit is gedaan met de OMAX 2652 watersnijder:
 ![1](images/watersnijder.jpg)
 
 ### 4.1 Buigen
-De voor en achter plaat van het frame moeten worden gebogen. Het is handig om eerst een test strip te maken en die te buigen. De voorplaat heeft een lengte nodig van 655,59mm voor de test strip is het handig om deze te af te sniden op een hoogte van 100mm. De achter plaat heeft een lengte van 633,82 en ook hiet is het handig om de test strip een hoogte van 100mm te doen. De volgorde van het buigen is eerst de ronding doen en daarna met de kantbank vanaf de buiging naar het einde te werken. De afmetingen en rondingen van de buigen zijn te vinden in de SolidWorks tekening van de betrevende onderdelen. De watergesneden top plate voor de LD-90 is ook goed te gebruiken als referentie bij het buigen. Een voorbeeld van de gebogen test strips is hieronder te zien:
+De voor en achter plaat van het frame moeten worden gebogen. Het is handig om eerst een test strip te maken en die te buigen. De voorplaat heeft een lengte nodig van 655,59mm voor de test strip is het handig om deze te af te snijden op een hoogte van 100mm. De achter plaat heeft een lengte van 633,82 en ook hier is het handig om de test strip een hoogte van 100mm te doen. De volgorde van het buigen is eerst de ronding doen en daarna met de kantbank vanaf de buiging naar het einde te werken. De afmetingen en rondingen van de buigen zijn te vinden in de SolidWorks tekening van de betreffende onderdelen. De watergesneden top plate voor de LD-90 is ook goed te gebruiken als referentie bij het buigen. Een voorbeeld van de gebogen test strips is hieronder te zien:
 
 
 ![2](images/test-buigen.jpg)
@@ -79,11 +79,16 @@ De uiteindelijke platen moeten worden gesneden op een hoogte van 450mm in plaats
 De 4 tussenplaten moeten worden getapped met een M4 tap. Verder moeten de voor, achter en zei platen worden verzonken voor een M4 verzonken inbus bout. Let op bij het verzinken dat dit aan de juiste kant wordt gedaan. De voor en achter plaat maakt niet uit maar moet je er vervolgens wel rekening mee houden bij het buigen. Voor de 2 zei platen is het belangrijk dat ze beide aan een andere kant zijn verzonken want deze zijn op die manier gespiegeld. Verder moet er voor de top plate en top top plate verzonken worden voor M6 en M5 verzonken inbus bouten volgens de SolidWorks tekening.
 
 ## 5. Trap sensor
-Omdat het helaas een keer is gebeurd dat een geleende LD-60 van de trap is gevallen bij NHL-Stenden door de afwezigheid van een trap sensor, hebben we er voor gekozen om een zelfgemaakte trap sensor toe te voegen. Deze zal worden aangesloten op de UserBumper_1-3. Dit werk door een ToF sensor die schuin naar voren kijkt en de data naar een esp32 stuurt. zodra deze een verhoging of verlaging van 30 mm tegen komt zal deze een relais triggeren welke is aangesloten op de UserBumper_1-3 van de LD-90. Hieronder is een prgramma geschreven in arduino IDE welke te vinden is onder de map trap beveiliging. Hier moet nog een stuk worden toegevoegd voor de WS2812 leds welke in de behuizingen worden geplaatst van de sensoren om de status weer te geven. Hieronder zijn wat renders te zien over hoe het er uit zou moeten zien:
+Omdat het helaas een keer is gebeurd dat een geleende LD-60 van de trap is gevallen bij NHL-Stenden door de afwezigheid van een trap sensor, hebben we er voor gekozen om een zelfgemaakte trap sensor toe te voegen. Deze zal worden aangesloten op de UserBumper_1-3. Dit werk door een ToF sensor die schuin naar voren kijkt en de data naar een esp32 stuurt. zodra deze een verhoging of verlaging van 30 mm tegen komt zal deze een relais triggeren welke is aangesloten op de UserBumper_1-3 van de LD-90. Hieronder is een programma geschreven in arduino IDE welke te vinden is onder de map trap beveiliging. Hier moet nog een stuk worden toegevoegd voor de WS2812 leds welke in de behuizingen worden geplaatst van de sensoren om de status weer te geven. Hieronder zijn wat renders te zien over hoe het er uit zou moeten zien:
 
 Vooraanzicht 3 trap sensoren             |  Ingezoomd op 1 trap sensor
 :-------------------------:|:-------------------------:
 ![3](images/trap-sensor-voorkant.jpg)  |  ![4](images/trap-sensor.jpg)
+
+Er is ook een PCB ontworpen voor de trap sensor. De altium bestanden hiervan zijn te vinden in de map trap beveiliging/altium.
+Hieronder is een foto te zien van de gemaakte PCB in altium:
+
+![PCB trapsensor](images/PCB_trapsensor.png)
 
 
 ## 6. Monteren en demonteren
